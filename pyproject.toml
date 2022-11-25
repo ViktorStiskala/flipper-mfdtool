@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "mfdtool"
+version = "0.1.0"
+description = ""
+authors = ["Viktor Stískala <viktor@stiskala.cz>"]
+
+[tool.poetry.dependencies]
+python = ">=3.7"
+bitstring = "^4.0.1"
+click = "^8.1.3"
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.scripts]
+mfdtool = 'mfdtool.tool:cli'
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
